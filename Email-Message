@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Message Jack</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    .form-box {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: green;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+    h2 {
+      color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Send a Message to Jack</h2>
+    <form action="https://formsubmit.co/Jack.vanwijk@hotmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      
+      <!-- Optional settings -->
+      <input type="hidden" name="_subject" value="New message from Jack's Home Produce!" />
+      <input type="hidden" name="_next" value="https://yourwebsite.com/success.html" />
+      <input type="hidden" name="_captcha" value="false" />
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>
